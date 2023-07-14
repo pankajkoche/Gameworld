@@ -3,17 +3,17 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 const games = [
   {
     id: 1,
-    title: 'Game 1',
+    title: 'Tic tac toe',
     url:'/tic-tac-toe',
     imageUrl: 'https://play-lh.googleusercontent.com/zPxLgj5nvl20ahJV7aFC6S5mD8kii5CEEDj25j1P9CYAfXL9sdDuO-8eES0r4DhJHrU',
-    description: 'Description of Game 1',
+    description: '',
   },
   {
     id: 2,
-    title: 'Game 2',
+    title: 'Snake',
     url:'/snake',
     imageUrl: 'https://www.coolmathgames.com/sites/default/files/Snake%20OG%20Image.png',
-    description: 'Description of Game 2',
+    description: '',
   },
   // Add more game objects as needed
 ];
@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-8">
       <div className="container mx-auto">
-        <h1 className="text-4xl text-center font-bold mb-8">Multi-Game Home Page</h1>
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {games.map((game) => (
             <div
